@@ -1,4 +1,5 @@
 import TaxExplorer from "./components/TaxExplorer";
+import ErrorDetection from "./components/ErrorDetection";
 import { useState } from "react";
 import {
   LayoutDashboard,
@@ -201,9 +202,11 @@ function App() {
               )}
             </div>
                     </section>
-        ) : activePage === "Tax Explorer" ? (
-          <TaxExplorer taxData={taxData} />
-        ) : (
+       ) : activePage === "Tax Explorer" ? (
+  <TaxExplorer taxData={taxData} />
+) : activePage === "Error Detection" ? (
+  <ErrorDetection taxData={taxData} />
+) : (
           /* OTHER PAGES - TO BE RESTORED */
           <section className="content-panel">
             <h2>{activePage}</h2>
