@@ -1,4 +1,4 @@
-
+import TaxExplorer from "./components/TaxExplorer";
 import { useState } from "react";
 import {
   LayoutDashboard,
@@ -200,7 +200,9 @@ function App() {
                 <p>No matching documents found.</p>
               )}
             </div>
-          </section>
+                    </section>
+        ) : activePage === "Tax Explorer" ? (
+          <TaxExplorer taxData={taxData} />
         ) : (
           /* OTHER PAGES - TO BE RESTORED */
           <section className="content-panel">

@@ -329,3 +329,231 @@
     display: none;
   }
 }
+
+/* TAX EXPLORER */
+
+.explorer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.explorer-header h2 {
+  margin-bottom: 6px;
+}
+
+.explorer-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2563eb;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.explorer-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #dbe2ed;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+.explorer-search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+}
+
+.tax-line-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tax-line-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+  overflow: hidden;
+  background: white;
+}
+
+.tax-line-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 18px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #334155;
+}
+
+.tax-line-header:hover {
+  background: #f8fafc;
+}
+
+.tax-line-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.tax-line-info strong {
+  font-size: 14px;
+}
+
+.tax-line-info span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.tax-line-value {
+  font-size: 16px;
+  color: #172033;
+  white-space: nowrap;
+}
+
+.tax-line-expanded {
+  padding: 20px;
+  border-top: 1px solid #e2e8f0;
+  background: #fbfcfe;
+}
+
+.tax-line-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.tax-line-metadata p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.tax-line-note {
+  background: #eff6ff;
+  border-left: 3px solid #3b82f6;
+  padding: 12px 15px;
+  margin-top: 18px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.tax-line-note p {
+  margin: 7px 0 0;
+  line-height: 1.6;
+}
+
+.explorer-section {
+  margin-top: 24px;
+}
+
+.explorer-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.trace-node {
+  border-left: 2px solid #93c5fd;
+  padding: 10px 0 10px 15px;
+  margin: 8px 0;
+}
+
+.trace-node-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 13px;
+}
+
+.trace-children {
+  margin-left: 16px;
+}
+
+.evidence-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: white;
+}
+
+.evidence-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1e40af;
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.evidence-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  color: #475569;
+  font-size: 12px;
+}
+
+.source-view-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 13px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.source-view-button:hover {
+  background: #1d4ed8;
+}
+
+.explorer-muted {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.page-reference {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .explorer-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tax-line-header {
+    padding: 13px;
+  }
+
+  .tax-line-value {
+    font-size: 13px;
+  }
+
+  .tax-line-expanded {
+    padding: 13px;
+  }
+}
